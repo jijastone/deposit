@@ -35,7 +35,7 @@ class OKATOAdmin(admin.ModelAdmin):
 
 @admin.register(Deposit)
 class DepositAdmin(admin.ModelAdmin):
-    list_display = ('name',)
+    list_display = ('name','id')
 
 
 @admin.register(Сoordinates)
@@ -45,4 +45,4 @@ class СoordinatesAdmin(admin.ModelAdmin):
 
 @admin.register(Owner)
 class OwnerAdmin(admin.ModelAdmin):
-    list_display = ('name',)
+    list_display = ('name', 'id')

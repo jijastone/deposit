@@ -83,6 +83,7 @@ class Area(models.Model):
     deposit = models.ForeignKey(Deposit, on_delete=models.CASCADE)
     coordinates = models.ManyToManyField(
         Сoordinates,
+        related_name='area'
     )
     owners = models.ManyToManyField(
         Owner,
